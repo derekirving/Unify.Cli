@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Unify.Cli": {
+      "commandName": "Project"
+    }
+  }
+}

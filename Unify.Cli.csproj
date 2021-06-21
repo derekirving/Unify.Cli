@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>unify</ToolCommandName>
+	<Description>A command line tool for configuring Unify applications</Description>
+	<PackageIcon>cli.png</PackageIcon>
+    <Version>0.1.0</Version>
+    <PackageOutputPath>../../../artifacts/nuget</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="3.0.0" />
+    <PackageReference Include="Spectre.Console" Version="0.39.0" />
+    <PackageReference Include="Azure.Identity" Version="1.3.0" />
+    <PackageReference Include="Microsoft.Graph" Version="3.25.0" />
+    <PackageReference Include="Microsoft.Identity.Client.Extensions.Msal" Version="2.18.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="../../../assets/nuget-icons/cli.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\NugetLibraries\Unify\Unify.csproj" />
+  </ItemGroup>
+
+</Project>
